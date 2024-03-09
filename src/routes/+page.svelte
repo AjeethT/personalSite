@@ -1,18 +1,26 @@
+<script>
+
+  import i18next from "../lib/i18n.js";
+  import { getContext } from "svelte";
+
+    const i18n = getContext("i18n");
+
+</script>
 <div class="mainBody">
-<h1>Hi I am Ajeeth Thangarasu</h1>
-<h2>Welcome to the area which tells about me</h2>
+<h1>{$i18n.t("myHeader")}</h1>
+<h2>{$i18n.t("welcomeText")}</h2>
 <div class="myContext">
-    <p>I am a full stack developer working in the role of Custom Software Engineering Analyst at Accenture. Had three years of experience working for a web application in the stack of ReactJS, ASP.NET Web API, MS SQL Server, Azure DevOps Platform.</p>
+    <p>{$i18n.t("myContext")}</p>
 </div> 
 <div class="moreLinks">
     <button>
-        More About Me!
+        {$i18n.t("moreAboutMe")}
     </button>
     <button>
-        My Projects!
+        {$i18n.t("myProjects")}
     </button>
     <button>
-        Contact Me!
+        {$i18n.t("contactMe")}
     </button>
 </div>
 </div>
