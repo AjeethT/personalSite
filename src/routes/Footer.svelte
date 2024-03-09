@@ -1,17 +1,24 @@
 <div class="footerArea">
     <div>
-        <ul><span id="footerHeaders">General</span>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
+        <ul><span id="footerHeaders">{$i18n.t("general")}</span>
+            <li><a href="/">{$i18n.t("home")}</a></li>
+            <li><a href="/about">{$i18n.t("about")}</a></li>
         </ul>
     </div>
     <div>
-        <ul><span id="footerHeaders">Links</span>
-            <li><a href="a">LinkedIn</a></li>
-            <li><a href="b">Github</a></li>
+        <ul><span id="footerHeaders">{$i18n.t("links")}</span>
+            <li><a href="https://www.linkedin.com/in/ajeeth-thangarasu/" target="_blank">{$i18n.t("linkedIn")}</a></li>
+            <li><a href="https://github.com/AjeethT" target="_blank">{$i18n.t("github")}</a></li>
         </ul>   
     </div>
 </div>
+
+<script>
+    import i18next from "../lib/i18n.js";
+    import { getContext } from "svelte";
+
+    const i18n = getContext("i18n");
+</script>
 
 <style>
     .footerArea{
