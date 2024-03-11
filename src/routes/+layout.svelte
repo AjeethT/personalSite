@@ -13,16 +13,16 @@
     }}" style="text-decoration:{isTaSelected}">தமிழ்</button>
 </div>
 </div>
-
 <slot/>
 <Footer/>
 
 <style>
     .navigation{
         width: 100%;
-        background-color: #f2f2f2;
+        background-image: url('/static/bgImage.png');
         z-index: 100;
         display: flex;
+        background-color: rgba(0,0,0, 0.1);
     }
 
     .changeLang{
@@ -73,7 +73,7 @@
     
     const i18n = getContext("i18n");
 
-    let pages= [
+    $: pages= [
         {name: $i18n.t("home"), url: "/"},
         {name: $i18n.t("about"), url: "/about"}
     ];
