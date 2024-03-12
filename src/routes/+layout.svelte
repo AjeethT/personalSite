@@ -1,16 +1,16 @@
 <div class="navigation">
 <div class="navigationArea">
-<a href="{pages[currentPage].url}"><button on:click={leftClick}>&lt;</button></a>
+<a href="{pages[currentPage].url}"><button on:click={leftClick}  id="prevPage">&lt;</button></a>
 <span id="pageName">{pages[currentPage].name}</span>
-<a href="{pages[currentPage].url}"><button on:click={rightClick}>&gt;</button></a>
+<a href="{pages[currentPage].url}"><button on:click={rightClick}  id="nextPage">&gt;</button></a>
 </div>
 <div class="changeLang">
     <button on:click="{()=>{
         changeLang("en");
-    }}" style="text-decoration:{isEngSelected}">Eng</button>
+    }}" style="text-decoration:{isEngSelected}" id="engButton">Eng</button>
     <button on:click="{()=>{
         changeLang("ta");
-    }}" style="text-decoration:{isTaSelected}">தமிழ்</button>
+    }}" style="text-decoration:{isTaSelected}" id="tamilButton">தமிழ்</button>
 </div>
 </div>
 <slot/>
@@ -18,11 +18,17 @@
 
 <style>
     .navigation{
+        color: white;
         width: 100%;
         background-image: url('/static/bgImage.png');
         z-index: 100;
         display: flex;
-        background-color: rgba(0,0,0, 0.1);
+        background-color: #0b1f3f;
+    }
+
+    #nextPage, #prevPage,#engButton,#tamilButton{
+        text-decoration: none;
+        color: white;
     }
 
     .changeLang{
