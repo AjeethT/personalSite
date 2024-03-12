@@ -1,7 +1,8 @@
 {
     "home":"Home",
     "about":"About",
-    "myHeader":"Hi I am Ajeeth Thangarasu",
+    "hiText":"Hi I am",
+    "myHeader":"Ajeeth Thangarasu",
     "welcomeText": "Welcome to the area which tells about me",
     "myContext":"I am a full stack developer working in the role of Custom Software Engineering Analyst at Accenture. Had three years of experience working for a web application in the stack of ReactJS, ASP.NET Web API, MS SQL Server, Azure DevOps Platform.",
     "moreAboutMe":"More about me !",
