@@ -11,5 +11,12 @@
     "linkedIn":"LinkedIn",
     "gitHub":"GitHub",
     "myProjects":"My Projects",
-    "contactMe":"Contact Me"
+    "contactMe":"Contact Me",
+    "workExp":"Work Experience",
+    "cseaAccenture":"Custom Software Engineering Analyst / Accenture / Jun 2022 - Present",
+    "cseaAccentureDesc":"Worked on fullstack development with the following technologies: ReactJS, ASP.NET Web API, MS SQL Server for a web application. Worked in Azure DevOps platform to maintain code repos, CI/CD build and release pipelines. Worked on different development tasks, database cleanup, database migration, and few security vulnerability fixes. ",
+    "aseaAccenture":"Associate Software Engineer / Accenture / Jan 2021 - May 2022",
+    "aseaAccentureDesc":"Worked on fullstack development with the following technologies: ReactJS, ASP.NET Web API, MS SQL Server for a web application. Worked on analyzing and fixing the issues occur in production environment. Worked on different development tasks",
+    "education":"Education",
+    "bTech":"Bachelor of Technology / Information Technology / SRM Valliammai Eng. College / 2016 - 2020"
 }
