@@ -18,5 +18,13 @@
     "aseaAccenture":"Associate Software Engineer / Accenture / Jan 2021 - May 2022",
     "aseaAccentureDesc":"Worked on fullstack development with the following technologies: ReactJS, ASP.NET Web API, MS SQL Server for a web application. Worked on analyzing and fixing the issues occur in production environment. Worked on different development tasks",
     "education":"Education",
-    "bTech":"Bachelor of Technology / Information Technology / SRM Valliammai Eng. College / 2016 - 2020"
+    "bTech":"Bachelor of Technology / Information Technology / SRM Valliammai Eng. College / 2016 - 2020",
+    "12th":"Higher Secondary School - Computer Science group / Don Bosco Mat. Hr. Sec. School / 2016",
+    "10th":"Secondary School / Sri Vidhya Lakshmi Mat. Hr. Sec. School / 2014",
+    "planguages":"Programming Languages",
+    "frontEnd":"Frontend frameworks and libraries",
+    "backEnd":"Backend frameworks and libraries",
+    "databases":"Databases",
+    "tools":"Tools",
+    "otherTechs":"Other Technologies"
 }
