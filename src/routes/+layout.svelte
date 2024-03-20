@@ -13,21 +13,23 @@
   const i18n = getContext("i18n");
 
   $: pages = [
-    { name: $i18n.t("home"), url: "/" },
-    { name: $i18n.t("about"), url: "/about" },
+    { name: $i18n.t("home"), url: "/", selected: true},
+    { name: $i18n.t("about"), url: "/about", selected: false},
   ];
 
-  let currentPage = 0;
-  let language = "en";
-
-  function leftClick() {
-    if (currentPage < pages.length - 1) currentPage = pages.length - 1;
-    else currentPage = currentPage - 1;
+  /**
+   * @param {any} event
+   */
+  function handleChangeURL(event){
+    console.log(event);
+    if(event == "home"){
+      pages[0].selected = true;
+      pages[1].selected = false;
   }
-
-  function rightClick() {
-    if (currentPage < pages.length - 1) currentPage = currentPage + 1;
-    else currentPage = 0;
+  else if(event == "about"){
+      pages[0].selected = false;
+      pages[1].selected = true;
+  }
   }
 
   /**
@@ -50,16 +52,9 @@
 <div class="flex flex-col">
   <div class="h-14 flex flex-row justify-between items-center text-xl navigationArea px-10">
     <div>
-      <ul class="flex flex-row justify-between">
-        <li><a href={pages[currentPage].url}
-          class="px-10"><button on:click={leftClick} id="prevPage" >&lt;</button>
-      </a></li>
-      <li><span id="pageName" class="px-10">{pages[currentPage].name}</span>
-      </li>
-      <li>
-      <a href={pages[currentPage].url}
-        ><button on:click={rightClick} id="nextPage" class="px-10">&gt;</button></a
-      ></li>
+      <ul class="flex flex-row">
+        <li class="ml-10"><a href="/" on:click={()=>handleChangeURL('home')} class={pages[0].selected?"underline":""}>{pages[0].name}</a></li>
+        <li class="ml-10"><a href="/about" on:click={()=>handleChangeURL('about')}  class={pages[1].selected?"underline":""}>{pages[1].name}</a></li>
     </ul>
     </div>
     <div class="changeLang">
@@ -83,7 +78,7 @@
     <slot />
   </div>
   <div class="basis-52">
-    <Footer />
+    <Footer on:changeEvent={handleChangeURL} />
   </div>
 </div>
 
