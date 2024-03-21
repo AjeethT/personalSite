@@ -26,5 +26,9 @@
     "backEnd":"Backend frameworks and libraries",
     "databases":"Databases",
     "tools":"Tools",
-    "otherTechs":"Other Technologies"
+    "otherTechs":"Other Technologies",
+    "accExpIL":"Experience in Work at Accenture. Intermediate Level.",
+    "accPerExpIL":"Experience in Work at Accenture and Personal Projects. Intermediate Level.",
+    "curLrnBL":"Currently Learning. Beginner level.",
+    "lrnBacBL":"Learned during my Bachelors. Beginner Level"
 }
