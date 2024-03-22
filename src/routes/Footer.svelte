@@ -1,5 +1,4 @@
 <script>
-  import i18next from "../lib/i18n.js";
   import { getContext } from "svelte";
   import { createEventDispatcher } from "svelte";
 
