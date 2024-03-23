@@ -30,5 +30,7 @@
     "accExpIL":"Experience in Work at Accenture. Intermediate Level.",
     "accPerExpIL":"Experience in Work at Accenture and Personal Projects. Intermediate Level.",
     "curLrnBL":"Currently Learning. Beginner level.",
-    "lrnBacBL":"Learned during my Bachelors. Beginner Level"
+    "perLrnIL":"Personal Learning. Intermediate level.",
+    "lrnBacBL":"Learned during my Bachelors. Beginner Level",
+    "accExpBL":"Experience in Work at Accenture. Beginner Level."
 }

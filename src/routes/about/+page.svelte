@@ -4,6 +4,9 @@
   import { Listgroup, ListgroupItem } from "flowbite-svelte";
   import PLagugages from "./PLanguages.svelte";
   import FTechs from "./FTechs.svelte";
+  import BTechs from "./BTechs.svelte";
+  import DTechs from "./DTechs.svelte";
+  import Tools from "./Tools.svelte";
 
   const i18n = getContext("i18n");
 </script>
@@ -48,12 +51,15 @@
       </AccordionItem>
       <AccordionItem>
         <span slot="header">{$i18n.t("backEnd")}</span>
+        <BTechs/>
       </AccordionItem>
       <AccordionItem>
         <span slot="header">{$i18n.t("databases")}</span>
+        <DTechs/>
       </AccordionItem>
       <AccordionItem>
         <span slot="header">{$i18n.t("tools")}</span>
+        <Tools/>
       </AccordionItem>
       <AccordionItem>
         <span slot="header">{$i18n.t("otherTechs")}</span>
